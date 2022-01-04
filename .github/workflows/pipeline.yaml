@@ -36,4 +36,4 @@ jobs:
         pytest
     - name: Run Static type test
       run: |
-        mypy app/ --install-types
+        mypy app/ --install-types --non-interactive
