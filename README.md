@@ -1,3 +1,4 @@
+[![Pipeline](https://github.com/url-shortner/url-service/actions/workflows/pipeline.yaml/badge.svg)](https://github.com/url-shortner/url-service/actions/workflows/pipeline.yaml)
 # URL Service
 This service provides an interface for dealing with URL object. Redis is used as storage backend.
 
