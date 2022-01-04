@@ -9,11 +9,12 @@ on:
 jobs:
   test:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.oses }}
 
     strategy:
       matrix:
         python_v: ["3.8", "3.9"]
+        oses: ["ubuntu-20.04", "macos11"]
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python version
