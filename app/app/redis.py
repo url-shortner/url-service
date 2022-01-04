@@ -12,9 +12,9 @@ def fetchURLbyID(url_id: str) -> Union[Dict[Any, Any], None]:
     data = redis.get(url_id)
     if data is None:
         return None
-    data = json.loads(data)
-    data["url_id"] = url_id
-    return data
+    data_decoded = json.loads(data)
+    data_decoded["url_id"] = url_id
+    return data_decoded
 
 
 def addUrl(url: schemas.URL) -> bool:
