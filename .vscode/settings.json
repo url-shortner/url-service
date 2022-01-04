@@ -1,0 +1,5 @@
+{
+	"python.analysis.typeCheckingMode": "strict",
+	"editor.tabSize": 4,
+	"editor.insertSpaces": true
+}
