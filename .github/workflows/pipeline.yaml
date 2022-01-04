@@ -34,9 +34,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Install MyPy stubs
-      run: |
-        mypy --install-types
     - name: Run Static type test
       run: |
-        mypy app/
+        mypy app/ --install-types
