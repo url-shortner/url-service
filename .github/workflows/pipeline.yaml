@@ -39,8 +39,6 @@ jobs:
         mypy app/ --install-types --non-interactive 
   build-push:
     runs-on: ubuntu-latest
-    env:
-      COMMIT: ${{ github.sha }}
     needs: test
     if: ${{ github.ref == 'refs/heads/main' }}
     steps:
